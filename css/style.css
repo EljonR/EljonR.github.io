@@ -1,0 +1,465 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: #FFFFFF;
+
+    }
+  }
+*
+    {
+        border: 0;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        
+    }
+
+main, aside, header{
+    background-color: #F7D6BF;
+}
+
+/*
+body is flexbox
+flexbox default value is row (naar column veranderen)
+Je kan flexbox in een flexbox zetten( container moet display hebben > align self center)
+*/
+body{
+    display: flex;
+    flex-flow: column;
+}
+ul{
+    list-style: none;
+    
+
+}
+ul > li{
+    display: inline-block;
+    position: relative;
+}
+ul > li > a 
+{
+    display:block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    
+}
+ul li ul.dropdown 
+{
+    display: block;
+}
+ul li ul.dropdown 
+{
+    width: 100%;
+    background:#06491D;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover 
+{
+    background: #06491D;
+}
+ul li:hover ul.dropdown 
+{
+    display:block;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+}
+main, header, aside{
+    width: 70%;
+    align-self: center;
+}
+
+img{
+    width: 100px;
+    border-width: 5px;
+    border-color: #F7D6BF;
+    border-style: solid;
+    z-index: 9999;
+}
+
+nav, footer{
+    background-color: #06491D;
+}
+nav{
+    display: flex;
+    
+}
+/*
+Styling for dropdown
+*/
+.nav li{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;  
+}
+/*
+psuedo-class selected link
+geen important gebruiken
+pseudo-element first letter
+gebruik ook fix ergens
+*/
+
+p{
+    word-spacing: 1px;
+    text-indent: 5px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;;
+}
+aside{
+    display: flex;
+    height: 300px;
+
+}
+.first_paragraph{
+    height: fit-content;
+}
+.second_paragraph {
+    align-self: flex-end;
+    position: absolute;
+    right: 310px;
+    width: 46.875em;
+    top: 15.625rem;
+    
+}
+.title{
+    text-transform: uppercase;
+}
+/*
+Stedenwijk
+*/
+.home_article figcaption{
+    display: flex;
+    justify-content: center;
+    background-color: #00E471;
+}
+.home_article img{
+    width: 300px;
+}
+.home_article {
+    display: flex;
+   justify-content: center;
+    flex-wrap: wrap;
+    gap: 10em;
+}
+/*
+Sporten
+*/
+.sporten_article img{
+    width: 300px;
+}
+.sporten_article{
+    display: flex;
+   justify-content: center;
+    flex-wrap: wrap;
+    gap: 10em;
+}
+.sporten_aside img{
+    width: 200px;
+    height: 200px;
+   }
+/*
+Eten en drinken
+*/
+
+.eten_article img{
+    width: 300px;
+}
+.eten_article{
+    display: flex;
+   justify-content: center;
+    flex-wrap: wrap;
+    gap: 10em;
+}
+/*
+Albertheijn en Jot's Snackbar
+*/
+.albertheijn_article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.albertheijn_article img{
+    width: 300px;
+}
+/*
+Activiteieten
+*/
+.activiteiten_article img{
+    width: 300px;
+    
+}
+.first_image{
+    float: left;
+}
+.second_image{
+    float: right;
+}
+.activiteiten_first_paragraph{
+    height: 10em;
+    width: 30em;
+    float: left;
+}
+.activiteiten_second_paragraph{
+    height: 10em;
+    width: 30em;
+    
+}
+/*
+Basketbal
+*/
+.basketbal_article img{
+    width: 300px;
+    
+    
+}
+.basket_first_img{
+    display: flex;
+    justify-content: center;
+}
+.basket_second_img{
+    display: flex;
+    justify-content: center;
+}
+.basketbal_article p{
+    height: 10em;
+    width: 30em;
+}
+/*
+Buiten
+*/
+.buiten_article img{
+    width: 300px;
+}
+.buiten_article figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buiten_article figcaption{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #00E471;
+}
+/*
+Deventer
+*/
+.deventer_article img{
+    width: 500px; 
+}
+.deventer_article figure{
+    display: flex;
+    justify-content: center;
+}
+.deventer_article p{
+    margin-left: 200px;
+    width: 30em;
+}
+.deventer_article h3{
+    margin-left: 200px;
+    width: 40em;
+}
+/*
+McDonald's
+*/
+.mc_article img{
+    height: 200px;
+    width: 300px;
+    margin-right: 200px;
+}
+.mc_article figure{
+    display: flex;
+    justify-content: center;
+}
+.mc_article p{
+    width: 30em;
+    margin-left: 200px;
+    
+}
+.mc_article h3{
+    margin-left: 200px;
+}
+/*
+Speeltuinen
+*/
+.speeltuin_aside img{
+    width: 300px;
+    height: 200px;;
+}
+.speeltuin_aside p{
+    width: 30em;
+}
+.speeltuin_article img{
+    width: 150px;
+}
+.speeltuin_article h3{
+    margin-left: 100px;
+}
+.speeltuin_article figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.speeltuin_article p{
+    margin-left: 100px;
+    width: 40em;
+}
+/*
+Speeltuinen
+*/
+.sporthal_article img{
+    width: 500px;
+}
+.sporthal_article figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sporthal_article h3{
+    margin-left: 200px;
+}
+.sporthal_article p{
+    width: 30em;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*
+Stranden
+*/
+.stranden_article img{
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+.stranden_article h3{
+    margin-left: 200px;
+}
+.stranden_article p{
+    width: 30em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+/*
+Vervoer
+*/
+
+.vervoer_article img{
+    width: 250px;
+    float: left;
+    margin-top: 10px;
+}
+.vervoer_article p{
+    width: 30em;
+    float: left;
+    margin-left: 20px;
+}
+.second_img{
+    float: right;
+}
+/*
+Voetbal
+*/
+.voetbal_article img{
+    width: 300px;
+}
+.voetbal_aside img{
+    width: 200px;
+}
+.voetbal_aside p{
+    width: 30em;
+    margin-left: 30px;
+}
+.voetbal_article p{
+    width: 50em;
+    margin-left: 30px;
+}
+.voetbal_article figure{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.voetbal_article h3{
+    margin-left: 30px;
+}
+/*
+Voetbal
+*/
+.zwemmen_article img{
+    width: 300px;
+    height: 200px;
+}
+.zwemmen_article figure{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.zwemmen_article p{
+    width: 30em;
+    
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+.zwemmen_article h3{
+    margin-left: 200px;
+}
+
+/*
+form style
+*/
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #06491D;
+    color: white;
+    margin: 50px;
+}
+
+.body_form{
+    display: flex;
+}
+
+.form_section{
+    display: flex;
+    flex-direction: column;
+    background-color: #F7D6BF;
+    width: 70%;
+    align-self: center;
+    align-items: center;
+}
+
+.form_section > article{
+display: inline;
+width: 400px;
+color: white;
+
+}
+
+.form_section > article > p{
+    background-color: #06491D;
+}
+
+.hidden{
+    display: hidden;
+}

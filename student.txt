@@ -1,0 +1,5 @@
+Student name: Eljon Relyveld
+Student number: 713634
+Student class: INF1B
+GitHub Repository: 
+GitHub Pages URL: 
